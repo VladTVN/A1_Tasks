@@ -1,0 +1,47 @@
+<html>
+<head></head>
+<body>
+
+<table width="100%" border="1">
+    <tr>
+        <th>id</th>
+        <th>matDoc</th>
+        <th>item</th>
+        <th>docDate</th>
+        <th>pstngDate</th>
+        <th>materialDescription</th>
+        <th>quantity</th>
+        <th>bun</th>
+        <th>amountLC</th>
+        <th>crcy</th>
+        <th>userName</th>
+        <th>authorizedDelivery</th>
+    </tr>
+
+    {{#result}}
+        <tr>
+        <td>{{id}}</td>
+        <td>{{matDoc}}</td>
+        <td>{{item}}</td>
+        <td>{{docDate}}</td>
+        <td>{{pstngDate}}</td>
+        <td>{{materialDescription}}</td>
+        <td>{{quantity}}</td>
+        <td>{{bun}}</td>
+        <td>{{amountLC}}</td>
+        <td>{{crcy}}</td>
+        <td>{{userName}}</td>
+        <td>{{authorizedDelivery}}</td>
+        </tr>
+    {{/result}}
+</table>
+
+<form method="get" action={{url}}>
+    <input type="hidden" name="filter" value="true">
+    <input type="hidden" name="search" value={{search}}>
+    <input type="submit" value="Use filter">
+</form>
+
+<a href="/">Main page</a>
+</body>
+</html>

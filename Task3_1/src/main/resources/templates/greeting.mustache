@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>Hello, user</div>
+
+<form action="/day" method="get">
+    <input type="text" name="search" placeholder="Enter the day">
+    <input type="hidden" name="filter" value="false">
+    <input type="submit" value="Search by day">
+</form>
+<br>
+
+<form action="/month" method="get">
+    <input type="text" name="search" placeholder="Enter the month">
+    <input type="hidden" name="filter" value="false">
+    <input type="submit" value="Search by month">
+</form>
+<br>
+
+<form action="/year" method="get">
+    <input type="text" name="search" placeholder="Enter the year">
+    <input type="hidden" name="filter" value="false">
+    <input type="submit" value="Search by year">
+</form>
+<br>
+
+<form action="/quarter" method="get">
+    <label for="1">1 quarter</label>
+    <input type="radio" id="1" value="1" name="search">
+    <br>
+    <label for="2">2 quarter</label>
+    <input type="radio" id="2" value="2" name="search">
+    <br>
+    <label for="3">3 quarter</label>
+    <input type="radio" id="3" value="3" name="search">
+    <br>
+    <label for="4">4 quarter</label>
+    <input type="radio" id="4" value="4" name="search">
+    <input type="hidden" name="filter" value="false">
+    <br>
+    <br>
+    <input type="submit" value="Search by quarter">
+</form>
+
+</body>
+</html>
